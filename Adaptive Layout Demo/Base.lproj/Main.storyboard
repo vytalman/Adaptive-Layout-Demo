@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adaptive_Layout_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +16,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bKo-FZ-gxs" userLabel="Red block">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72f-QR-jpN" userLabel="White block">
+                                <rect key="frame" x="40" y="110" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" id="L1Q-Yr-50e"/>
+                                    <constraint firstAttribute="height" priority="750" id="aSU-rl-adi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="L1Q-Yr-50e"/>
+                                        <exclude reference="aSU-rl-adi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="L1Q-Yr-50e"/>
+                                        <include reference="aSU-rl-adi"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bKo-FZ-gxs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="038-kI-UtZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="72f-QR-jpN" secondAttribute="bottom" constant="50" id="7Qu-dK-Yeo"/>
+                            <constraint firstItem="72f-QR-jpN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="98x-it-5en"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="72f-QR-jpN" secondAttribute="trailing" constant="50" id="BPM-wn-vff"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bKo-FZ-gxs" secondAttribute="trailing" constant="50" id="EXk-od-TK8"/>
+                            <constraint firstItem="bKo-FZ-gxs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="NEI-K9-9Uh"/>
+                            <constraint firstItem="bKo-FZ-gxs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Oqb-J9-hkN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bKo-FZ-gxs" secondAttribute="bottom" constant="50" id="Pan-FC-OWS"/>
+                            <constraint firstItem="72f-QR-jpN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="PkP-kL-IAA"/>
+                            <constraint firstAttribute="centerY" secondItem="72f-QR-jpN" secondAttribute="centerY" id="TSg-tC-KnV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bKo-FZ-gxs" secondAttribute="trailing" id="a9r-U5-3wQ"/>
+                            <constraint firstItem="bKo-FZ-gxs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m7m-FD-7M3"/>
+                            <constraint firstAttribute="centerX" secondItem="72f-QR-jpN" secondAttribute="centerX" id="pDe-lT-PEd"/>
+                            <constraint firstItem="bKo-FZ-gxs" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="txR-3a-xhU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="038-kI-UtZ"/>
+                                <exclude reference="EXk-od-TK8"/>
+                                <exclude reference="NEI-K9-9Uh"/>
+                                <exclude reference="Oqb-J9-hkN"/>
+                                <exclude reference="a9r-U5-3wQ"/>
+                                <exclude reference="m7m-FD-7M3"/>
+                                <exclude reference="txR-3a-xhU"/>
+                                <exclude reference="7Qu-dK-Yeo"/>
+                                <exclude reference="98x-it-5en"/>
+                                <exclude reference="BPM-wn-vff"/>
+                                <exclude reference="PkP-kL-IAA"/>
+                                <exclude reference="TSg-tC-KnV"/>
+                                <exclude reference="pDe-lT-PEd"/>
+                                <exclude reference="Pan-FC-OWS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="Oqb-J9-hkN"/>
+                                <include reference="a9r-U5-3wQ"/>
+                                <include reference="m7m-FD-7M3"/>
+                                <include reference="txR-3a-xhU"/>
+                                <include reference="7Qu-dK-Yeo"/>
+                                <include reference="98x-it-5en"/>
+                                <include reference="BPM-wn-vff"/>
+                                <include reference="PkP-kL-IAA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="038-kI-UtZ"/>
+                                <include reference="EXk-od-TK8"/>
+                                <include reference="NEI-K9-9Uh"/>
+                                <include reference="TSg-tC-KnV"/>
+                                <include reference="pDe-lT-PEd"/>
+                                <include reference="Pan-FC-OWS"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

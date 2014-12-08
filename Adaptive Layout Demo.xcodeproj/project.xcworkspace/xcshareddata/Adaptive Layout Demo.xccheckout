@@ -12,20 +12,24 @@
 	<dict>
 		<key>6B189ECEF60040D3533FDDA7ABC70D79D49454F8</key>
 		<string>https://github.com/vytalman/iOSProjects.git</string>
+		<key>83FD487E62BC9F633530E4D6EAFEACC5531C4347</key>
+		<string>https://github.com/vytalman/Adaptive-Layout-Demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Adaptive Layout Demo/Adaptive Layout Demo.xcodeproj</string>
+	<string>Adaptive Layout Demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6B189ECEF60040D3533FDDA7ABC70D79D49454F8</key>
 		<string>../../..</string>
+		<key>83FD487E62BC9F633530E4D6EAFEACC5531C4347</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/vytalman/iOSProjects.git</string>
+	<string>https://github.com/vytalman/Adaptive-Layout-Demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6B189ECEF60040D3533FDDA7ABC70D79D49454F8</string>
+	<string>83FD487E62BC9F633530E4D6EAFEACC5531C4347</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>6B189ECEF60040D3533FDDA7ABC70D79D49454F8</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iOSProjects</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>83FD487E62BC9F633530E4D6EAFEACC5531C4347</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Adaptive%20Layout%20Demo</string>
 		</dict>
 	</array>
 </dict>
