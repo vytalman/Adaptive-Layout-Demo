@@ -21,7 +21,7 @@
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72f-QR-jpN" userLabel="White block">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72f-QR-jpN" userLabel="White block">
                                 <rect key="frame" x="40" y="110" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -61,6 +61,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="7Qu-dK-Yeo"/>
+                                <exclude reference="98x-it-5en"/>
+                                <exclude reference="BPM-wn-vff"/>
+                                <exclude reference="PkP-kL-IAA"/>
+                                <exclude reference="TSg-tC-KnV"/>
+                                <exclude reference="pDe-lT-PEd"/>
                                 <exclude reference="038-kI-UtZ"/>
                                 <exclude reference="EXk-od-TK8"/>
                                 <exclude reference="NEI-K9-9Uh"/>
@@ -68,34 +74,28 @@
                                 <exclude reference="a9r-U5-3wQ"/>
                                 <exclude reference="m7m-FD-7M3"/>
                                 <exclude reference="txR-3a-xhU"/>
-                                <exclude reference="7Qu-dK-Yeo"/>
-                                <exclude reference="98x-it-5en"/>
-                                <exclude reference="BPM-wn-vff"/>
-                                <exclude reference="PkP-kL-IAA"/>
-                                <exclude reference="TSg-tC-KnV"/>
-                                <exclude reference="pDe-lT-PEd"/>
                                 <exclude reference="Pan-FC-OWS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
-                                <include reference="Oqb-J9-hkN"/>
-                                <include reference="a9r-U5-3wQ"/>
-                                <include reference="m7m-FD-7M3"/>
-                                <include reference="txR-3a-xhU"/>
                                 <include reference="7Qu-dK-Yeo"/>
                                 <include reference="98x-it-5en"/>
                                 <include reference="BPM-wn-vff"/>
                                 <include reference="PkP-kL-IAA"/>
+                                <include reference="Oqb-J9-hkN"/>
+                                <include reference="a9r-U5-3wQ"/>
+                                <include reference="m7m-FD-7M3"/>
+                                <include reference="txR-3a-xhU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="TSg-tC-KnV"/>
+                                <include reference="pDe-lT-PEd"/>
                                 <include reference="038-kI-UtZ"/>
                                 <include reference="EXk-od-TK8"/>
                                 <include reference="NEI-K9-9Uh"/>
-                                <include reference="TSg-tC-KnV"/>
-                                <include reference="pDe-lT-PEd"/>
                                 <include reference="Pan-FC-OWS"/>
                             </mask>
                         </variation>
